@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+	@apply mx-auto max-w-[768px] w-full px-[1rem] md:max-w-[768px] md:px-[1.5rem] lg:max-w-[1200px];
+}
+
+@layer components {
+	.header__nav {
+		@apply bg-black absolute bottom-full left-0 w-screen h-screen lg:w-auto lg:h-auto lg:bottom-auto lg:left-auto lg:bg-transparent lg:static;
+	}
+
+	.header__nav.open {
+		@apply bottom-0;
+	}
+}
