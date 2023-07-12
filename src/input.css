@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .container {
-	@apply mx-auto max-w-[768px] w-full px-[1rem] md:max-w-[768px] md:px-[1.5rem] lg:max-w-[1200px];
+	@apply mx-auto w-full px-[1rem] md:max-w-[768px] md:px-[1.5rem] lg:max-w-[1200px];
 }
 
 @layer components {
