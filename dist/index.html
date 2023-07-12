@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="scroll-smooth h-full">
+<html class="h-full scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,10 +7,10 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 	</head>
 
-	<body class="font-body overflow-x-hidden">
-		<header class="header bg-black">
+	<body class="overflow-x-hidden font-body">
+		<header class="bg-black header">
 			<div class="container">
-				<div class="header__wrapper flex justify-between py-3 lg:py-6">
+				<div class="flex justify-between py-3 header__wrapper lg:py-6">
 					<div class="branding lg:scale-150 lg:pl-[17px]">
 						<img class="cursor-pointer" src="/images/logo.svg" alt="" />
 					</div>
@@ -31,11 +31,15 @@
 									class="w-[1.5rem] h-[.2rem] bg-white block my-5 lg:my-1 lg:h-[1rem] lg:w-[.05rem] lg:mx-[15px]"
 								></span>
 							</li>
-							<li><a href="#" class="text-white text-[1.5rem] hover:text-[#1ed760] lg:text-[1rem]">Sign up</a></li>
-							<li><a href="#" class="text-white text-[1.5rem] hover:text-[#1ed760] lg:text-[1rem]">Log in</a></li>
+							<li>
+								<a href="#" class="text-white text-[1.5rem] hover:text-[#1ed760] lg:text-[1rem]">Sign up</a>
+							</li>
+							<li>
+								<a href="#" class="text-white text-[1.5rem] hover:text-[#1ed760] lg:text-[1rem]">Log in</a>
+							</li>
 						</ul>
 
-						<img class="absolute bottom-11 left-8 cursor-pointer lg:hidden" src="/images/logo.svg" alt="" />
+						<img class="absolute cursor-pointer bottom-11 left-8 lg:hidden" src="/images/logo.svg" alt="" />
 					</div>
 
 					<button class="toggle-menu z-[999] flex flex-col justify-center items-center gap-[.25rem] lg:hidden">
@@ -54,7 +58,7 @@
 						<h1 class="text-white text-[1.7rem] font-bold md:text-[2.5rem]">Get Premium free for 2 months</h1>
 						<h3 class="text-white my-3 md:text-[1.5rem] lg:my-6">Only $9.99/month after. Cancel anytime.</h3>
 
-						<div class="banner__buttons mb-10 text-center md:text-start">
+						<div class="mb-10 text-center banner__buttons md:text-start">
 							<button
 								class="text-white bg-[#191414] w-full py-4 font-bold rounded-full mb-3 hover:scale-105 hover:bg-black md:w-auto md:px-8 lg:mr-2"
 							>
@@ -84,15 +88,15 @@
 			</div>
 		</section>
 
-		<section class="why-premium bg-white">
+		<section class="bg-white why-premium">
 			<div class="container">
-				<div class="why-premium__wrapper my-10">
+				<div class="my-10 why-premium__wrapper">
 					<div class="why-premium__header mb-14">
 						<h1 class="text-[2rem] font-bold text-center md:text-[2.5rem] md:pt-5">Why go Premium?</h1>
 					</div>
 
 					<div class="why-premium__content flex flex-col gap-10 mb-[8rem] md:grid md:grid-cols-2 lg:grid-cols-4">
-						<div class="why-premium__item flex gap-5 items-center lg:flex-col lg:justify-center">
+						<div class="flex items-center gap-5 why-premium__item lg:flex-col lg:justify-center">
 							<img class="w-[7rem] h-[7rem] lg:w-[9rem] lg:h-[9rem]" src="/images/prem-music.png" alt="" />
 
 							<span class="lg:flex lg:flex-col lg:items-center">
@@ -101,7 +105,7 @@
 							</span>
 						</div>
 
-						<div class="why-premium__item flex gap-5 items-center lg:flex-col lg:justify-center">
+						<div class="flex items-center gap-5 why-premium__item lg:flex-col lg:justify-center">
 							<img class="w-[7rem] h-[7rem] lg:w-[9rem] lg:h-[9rem]" src="/images/prem-listening.png" alt="" />
 
 							<span class="lg:flex lg:flex-col lg:items-center">
@@ -110,7 +114,7 @@
 							</span>
 						</div>
 
-						<div class="why-premium__item flex gap-5 items-center lg:flex-col lg:justify-center">
+						<div class="flex items-center gap-5 why-premium__item lg:flex-col lg:justify-center">
 							<img class="w-[7rem] h-[7rem] lg:w-[9rem] lg:h-[9rem]" src="/images/prem-song.png" alt="" />
 
 							<span class="lg:flex lg:flex-col lg:items-center">
@@ -119,7 +123,7 @@
 							</span>
 						</div>
 
-						<div class="why-premium__item flex gap-5 items-center lg:flex-col lg:justify-center">
+						<div class="flex items-center gap-5 why-premium__item lg:flex-col lg:justify-center">
 							<img class="w-[7rem] h-[7rem] lg:w-[9rem] lg:h-[9rem]" src="/images/prem-skip.png" alt="" />
 
 							<span class="lg:flex lg:flex-col lg:items-center">
@@ -134,8 +138,8 @@
 
 		<section class="pick-premium bg-[#efefef]" id="pick-premium">
 			<div class="container">
-				<div class="pick-premium__wrapper py-10">
-					<div class="pick-premium__header text-center">
+				<div class="py-10 pick-premium__wrapper">
+					<div class="text-center pick-premium__header">
 						<h1 class="font-bold text-[2rem]">Pick your Premium</h1>
 						<p>Listen without limits on your phone, speaker, and other devices.</p>
 						<ul class="flex justify-center gap-3 my-3">
@@ -143,11 +147,13 @@
 							<li><img src="/images/mastercard.svg" alt="" /></li>
 							<li><img src="/images/amex.svg" alt="" /></li>
 							<li><img src="/images/discover.svg" alt="" /></li>
-							<li><img src="/images/paypal.png" class="w-[2.1rem] h-[1.2rem]" alt="" /></li>
+							<li>
+								<img src="/images/paypal.png" class="w-[2.1rem] h-[1.2rem]" alt="" />
+							</li>
 						</ul>
 					</div>
 
-					<div class="pick-premium__content flex flex-col gap-5 py-10 lg:grid lg:grid-cols-4">
+					<div class="flex flex-col gap-5 py-10 pick-premium__content lg:grid lg:grid-cols-4">
 						<div
 							class="pick-premium__item p-5 bg-white rounded-[1rem] drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] max-w-[490px] w-full mx-auto"
 						>
@@ -263,14 +269,14 @@
 			</div>
 		</section>
 
-		<footer class="footer bg-black text-white">
+		<footer class="text-white bg-black footer">
 			<div class="container">
-				<div class="footer__wrapper pt-10 lg:flex lg:justify-between">
+				<div class="pt-10 footer__wrapper lg:flex lg:justify-between">
 					<div class="footer__header lg:ml-6 lg:mt-8">
 						<img class="cursor-pointer lg:scale-150" src="/images/logo.svg" alt="" />
 					</div>
 
-					<div class="footer__content flex flex-col my-5 gap-10 md:grid md:grid-cols-3">
+					<div class="flex flex-col gap-10 my-5 footer__content md:grid md:grid-cols-3">
 						<div class="footer__item">
 							<h2 class="text-[#919496] my-5">COMPANY</h2>
 							<ul class="flex flex-col gap-5">
@@ -302,7 +308,7 @@
 						</div>
 					</div>
 
-					<div class="footer__icon flex gap-4 mt-28 mb-5 lg:mb-0 lg:mt-10">
+					<div class="flex gap-4 mb-5 footer__icon mt-28 lg:mb-0 lg:mt-10">
 						<div class="w-12 h-12 rounded-full bg-[#222326]">
 							<i
 								class="fa-brands fa-instagram text-[1.8rem] hover:text-[#1ed760] cursor-pointer mt-[.6rem] ml-[.75rem]"
@@ -321,8 +327,8 @@
 					</div>
 				</div>
 
-				<div class="footer__wrapper2 pb-10 flex justify-between">
-					<div class="footer__footer flex my-5">
+				<div class="flex justify-between pb-10 footer__wrapper2">
+					<div class="flex my-5 footer__footer">
 						<ul class="text-[#919496] flex gap-4 flex-wrap">
 							<li class="hover:text-[#1ed760] cursor-pointer">
 								<a href="#"><small>Legal</small></a>
@@ -356,7 +362,7 @@
 					</div>
 
 					<div class="footer__usa flex flex-col text-end gap-5 mt-[-15px] lg:">
-						<span class="flex text-end justify-end gap-2">
+						<span class="flex justify-end gap-2 text-end">
 							<img src="/images/usa.svg" alt="" />
 							<small class="text-[#919496] hover:text-[#1ed760] cursor-pointer">USA</small>
 						</span>
