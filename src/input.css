@@ -10,7 +10,7 @@
 
 @layer components {
 	.header__nav {
-		@apply bg-black absolute top-0 left-full w-screen h-screen duration-300 lg:w-auto lg:h-auto lg:bottom-auto lg:left-auto lg:bg-transparent lg:static;
+		@apply bg-black absolute top-0 left-full w-screen h-screen duration-300 lg:w-auto lg:h-auto lg:top-auto lg:left-auto lg:bg-transparent lg:static;
 	}
 
 	.header__nav.open {
