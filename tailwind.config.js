@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'duck': 'url(/images/duck.png)'
+				'duck': 'url(/docs/images/duck.png)'
 			}
 		},
 		fontFamily: {
